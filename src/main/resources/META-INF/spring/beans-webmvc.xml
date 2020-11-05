@@ -25,7 +25,6 @@
 
     <mvc:annotation-driven validator="globalValidator">
         <mvc:message-converters>
-<!--            <ref bean ="mappingJackson2HttpMessageConverter"/>-->
             <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
                 <property name="objectMapper">
                     <bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
